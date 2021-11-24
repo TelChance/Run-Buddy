@@ -51,6 +51,8 @@ footer {
     background-color: #fce138;
     width: 100%;
     padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
@@ -72,10 +74,26 @@ footer a {
 
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 
 .hero-secondary {
@@ -88,12 +106,10 @@ footer a {
 .hero-form {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -255,7 +271,7 @@ footer a {
     color: white;
 }
 
-.contact-info h3 {
+.contact-form h3 {
     color: #fce138;
     font-size: 32px;
 }
